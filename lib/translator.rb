@@ -16,7 +16,7 @@ def get_japanese_emoticon (file, emoticon)
   file.each do |emotion, hash_of_languages|
     binding.pry
     if emoticon == hash_of_languages[:english]
-      return file[hash_of_languages][:japanese]
+      return hash_of_languages[:japanese]
     else
       return "Sorry, that emoticon was not found"
     end
