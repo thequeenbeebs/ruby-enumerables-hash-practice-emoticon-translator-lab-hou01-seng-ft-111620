@@ -5,10 +5,10 @@ require "pry"
 def load_library(file)
   # code goes here
   emoticons = YAML.load_file(file)
-  
+
   emoticons.each do |emotion, array_of_emoticons|
-    emoticons[emotion] = 
-    {:english => array_of_emoticons[0], 
+    emoticons[emotion] =
+    {:english => array_of_emoticons[0],
     :japanese => array_of_emoticons[1]}
     binding.pry
   end
