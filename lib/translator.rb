@@ -10,8 +10,8 @@ def load_library(file)
     emoticons[emotion] =
     {:english => array_of_emoticons[0],
     :japanese => array_of_emoticons[1]}
-    binding.pry
   end
+  binding.pry
 end
 
 def get_japanese_emoticon
